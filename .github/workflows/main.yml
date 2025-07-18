@@ -82,9 +82,6 @@ jobs:
     - name: Install runtime dependencies
       run: npm ci
 
-    - run: |
-        echo "Mock Secret Value: ${{ secrets.MOCK_SECRET }}"
-
     - name: Run start script
       env:
         BLUESKY_USERNAME: ${{ secrets.BLUESKY_USERNAME }}
