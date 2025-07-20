@@ -16,8 +16,8 @@ async function main() {
     })
     console.log(`Logged in as ${agent.session?.handle}`);
     
-    // announced to release in may 26, 2026, 14h UTC
-    const releaseTimestamp = Date.UTC(2026, 4, 26, 14);
+    // announced to release in may 25, 2026, 14h UTC
+    const releaseTimestamp = Date.UTC(2026, 4, 25, 14);
     const nowTimestamp = new Date().getTime();   
     
     let remainingTime = releaseTimestamp - nowTimestamp;
