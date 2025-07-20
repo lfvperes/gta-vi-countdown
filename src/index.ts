@@ -1,7 +1,6 @@
 import { BskyAgent } from '@atproto/api';
 import * as dotenv from 'dotenv';
 import * as process from 'process';
-import { countdownDays } from './countdown';
 
 dotenv.config();
 
