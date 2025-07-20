@@ -18,8 +18,11 @@ async function main() {
     console.log(`Logged in as ${agent.session?.handle}`);
     
     // announced to release in may 26, 2026, 14h UTC
-    const releaseDate = new Date(2026, 4, 26, 14);
-    const remainingDays = countdownDays(releaseDate);
+    const releaseTimestamp = Date.UTC(2026, 4, 26, 14);
+    const nowTimestamp = new Date().getTime();   
+    
+    let remainingTime = releaseTimestamp - nowTimestamp;
+    let remainingDays = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
 
     let text = '';
     if (remainingDays > 0) {
